@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Righteous&family=Sono:wght@200;400;700&display=swap');
 *{
     box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .pokeImg{
@@ -12,4 +14,8 @@
 
 .sigle-pokemon{
     padding-left:15px;
+}
+
+.ability-container{
+    padding: 10px;
 }

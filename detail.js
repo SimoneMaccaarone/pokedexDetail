@@ -12,7 +12,6 @@ console.log(pokemonName);
 
 PokeService.getDetail(pokemonName).then(pokemonObject => {
     const myPokemon = Pokemon.createPokemon(pokemonObject.name, pokemonObject.types, pokemonObject.abilities, pokemonObject.stats, pokemonObject.sprites.front_default);
-    imagePokemon(myPokemon);
     displayPokemon(myPokemon);
 })
 
@@ -20,6 +19,7 @@ PokeService.getDetail(pokemonName).then(pokemonObject => {
 
 function displayPokemon(pokemon) {
     console.log('nostro pokemon', pokemon);
+
     const pokedex = document.getElementById('section-div');
     pokedex.innerHTML+=`
         <section class="section-style">
@@ -28,14 +28,14 @@ function displayPokemon(pokemon) {
             <div class="type-container">
                 <span>${createTypes(pokemon)}</span>
             </div>
+            
             <div class="ability-container">
                 <details>
                     <summary> Ability </summary>
                     <p>${createAbilities(pokemon)}</p>
                 </details>
             </div>
-        </section>
-    `    
+        </section>`    
 }
 function createTypes(pokemon) {
     return pokemon.type.join();
