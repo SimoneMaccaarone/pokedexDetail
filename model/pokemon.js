@@ -8,6 +8,7 @@ class Pokemon{
     }
 
 
+<<<<<<< Updated upstream
     // getAbilities(abilities){
 
     //     let tempArray = []
@@ -18,6 +19,9 @@ class Pokemon{
     //     }
     //     return tempArray;
     // }
+=======
+    static getAbilities(abilities){
+>>>>>>> Stashed changes
 
     //  getStats(stats){
     //     let tempArray = []

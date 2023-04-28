@@ -19,6 +19,7 @@ PokeService.getDetail(pokemonName).then(pokemonObject => {
 
 function displayPokemon(pokemon) {
     console.log('nostro pokemon', pokemon);
+<<<<<<< Updated upstream
 
     const pokedex = document.getElementById('section-div');
     pokedex.innerHTML+=`
@@ -39,6 +40,11 @@ function displayPokemon(pokemon) {
 }
 function createTypes(pokemon) {
     return pokemon.type.join();
+=======
+    
+    namePokemon(pokemon);
+    
+>>>>>>> Stashed changes
 }
 
 function createAbilities(pokemon) {
